@@ -11,18 +11,28 @@
   <body>
     <header class="row">
       <div class= "col-3">
-        Logo
+        <div class="circle">
+        <br />
+        Always
+        <br />
+        Sharing
+        <br />
+        Knowledge
       </div>
-      <div clas="col-4">
+      </div>
+      <div clas="col-4" slogan>
         Always Sharing Knowledge 
       </div>
-      <div class="col-5">
+      <div class="col-5 links">
         <%= link_to 'Share', '#' %>
         <%= link_to 'About', '#' %>
       </div>
 
 
     </header>
+    <hr />
+    <br class="clear" />
+
     <%= yield %>
   </body>
 </html>
