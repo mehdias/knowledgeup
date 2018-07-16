@@ -1,0 +1,8 @@
+<h1> Enter you Knowledges here</h>
+<%= simple_form_for @knowledge do |f| %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <%= f.input :written_by %>
+  <br />
+  <%= f.submit 'Create', class: 'btn btn-danger' %>
+<% end %>

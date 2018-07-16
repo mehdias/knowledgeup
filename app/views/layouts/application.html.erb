@@ -11,6 +11,7 @@
   <body>
     <header class="row">
       <div class= "col-3">
+        <%= link_to root_path, class: 'logo' do %>
         <div class="circle">
         <br />
         Always
@@ -19,12 +20,13 @@
         <br />
         Knowledge
         </div>
+      <% end %>
       </div>
       <div class="col-4 slogan">
         Always Sharing Knowledge 
       </div>
       <div class="col-5 links">
-        <%= link_to 'Share', '#' %>
+        <%= link_to 'Share', new_knowledge_path %>
         <%= link_to 'About', '#' %>
       </div>
 
@@ -40,7 +42,7 @@
       <div class="container">
         <div class="row">
           <div clas="col-6">
-            <%= link_to "This is not enough, I want more!", "#", class: "next-tip" %>
+            <%= link_to "This is not enough, I want more!", root_path, class: "next-tip" %>
           </div>
           <div class="col-6 footer-text">Created by Mehdi</p>
         </div>
