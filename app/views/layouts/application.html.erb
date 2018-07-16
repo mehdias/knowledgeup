@@ -18,9 +18,9 @@
         Sharing
         <br />
         Knowledge
+        </div>
       </div>
-      </div>
-      <div clas="col-4" slogan>
+      <div class="col-4 slogan">
         Always Sharing Knowledge 
       </div>
       <div class="col-5 links">
@@ -28,11 +28,25 @@
         <%= link_to 'About', '#' %>
       </div>
 
-
     </header>
     <hr />
     <br class="clear" />
+    
+    <div class="container">
+      <%= yield %>
+    </div>
 
-    <%= yield %>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div clas="col-6">
+            <%= link_to "This is not enough, I want more!", "#", class: "next-tip" %>
+          </div>
+          <div class="col-6 footer-text">Created by Mehdi</p>
+        </div>
+      </div>
+    </div>
+
+
   </body>
 </html>

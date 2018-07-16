@@ -1,5 +1,6 @@
 @import "bootstrap";
-
+@import url('https://fonts.googleapis.com/css?family=Chela+One');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 .clear {
   clear: both;
 }
@@ -30,6 +31,9 @@
   padding-top: 30px;
 }
 
+.next-tip {
+  color: #f84342;
+}
 .links {
   padding-top: 30px;
   color:black;
@@ -49,4 +53,23 @@ header {
 }
 hr {
   clear:both;
+}
+
+h1 {
+  font-family: 'Chela One', cursive
+}
+
+h2 {
+  font-family: 'Slabo 27px', serif;
+}
+
+h3 {
+  font-family: 'Chela One', cursive
+}
+
+.footer-text {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-style: italic;
+  text-align: right;
+  
 }
