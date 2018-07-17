@@ -22,11 +22,12 @@
         </div>
       <% end %>
       </div>
-      <div class="col-4 slogan">
-        Always Sharing Knowledge 
+      <div class="col col-sm-4 hidden-xs-down slogan">
+        gearing up knowledge, through reading and writing!
       </div>
-      <div class="col-5 links">
+      <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
          <%= link_to 'Share', '#', data: {toggle: 'modal', target: '#myModal'} %>
+         &nbsp;&nbsp;
         <%= link_to 'About', about_path %>
       </div>
 
@@ -47,17 +48,19 @@
           <%= simple_form_for Knowledge.new do |f| %>
           <div class="modal-body">
             
-            <%= f.input :title %>
-            <%= f.input :description %>
+            <%= f.input :title, placeholder: "what do you want to write about? type your title" %>
+            <br />
+            <%= f.input :description, placeholder: "write about your topic" %>
+            <br />
             <%= f.input :written_by %>
             <br />
-            <%= f.submit 'Create', class: 'btn btn-danger' %>
-          <% end %>
+          
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <%= f.submit 'Create', class: 'btn btn-danger' %>
           </div>
+        <% end %>
         </div>
       </div>
     </div>
@@ -76,10 +79,10 @@
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div clas="col-6">
+          <div clas="col-12 col-sm-6">
             <%= link_to "This is not enough, I want more!", root_path, class: "next-tip" %>
           </div>
-          <div class="col-6 footer-text">Created by Mehdi</p>
+          <div class="col-12 col-sm-6 footer-text">Created by Mehdi</p>
         </div>
       </div>
     </div>
